@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Building Tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map-container">
+        <div id="map">
+            <div id="character" class="character"></div>
+            <div class="marker" data-info="This is Building 1" style="left: 100px; top: 100px;"></div>
+            <div class="marker" data-info="This is Building 2" style="left: 300px; top: 200px;"></div>
+            <div class="marker" data-info="This is Building 3" style="left: 500px; top: 400px;"></div>
+        </div>
+        <div id="info-box">
+            <h2>Building Information</h2>
+            <p id="info-text">Move around to explore buildings...</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

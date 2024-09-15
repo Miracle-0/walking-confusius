@@ -1,0 +1,65 @@
+/* 全局设置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 页面布局：左边地图，右边信息框 */
+#map-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* 左侧地图区域，添加背景图片 */
+#map {
+    flex: 3;
+    position: relative;
+    background-image: url('map.png');  /* 地图图片 */
+    background-size: cover;  /* 使地图覆盖整个区域 */
+    background-position: center;  /* 地图居中 */
+    border-right: 2px solid #ccc;
+}
+
+/* 右侧信息框样式 */
+#info-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+    overflow-y: auto;
+}
+
+#info-box h2 {
+    margin-bottom: 10px;
+}
+
+#info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 使用图片代替小人图案 */
+.character {
+    width: 80px;  /* 小人图的宽度 */
+    height: 120px;  /* 小人图的高度 */
+    background-image: url('right.png');  /* 替换为小人的图片 */
+    background-size: contain;  /* 保持图片比例 */
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* 地图上的标记点 */
+.marker {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    border-radius: 50%;
+}
